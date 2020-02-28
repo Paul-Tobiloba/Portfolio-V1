@@ -1,1 +1,6 @@
 theme: jekyll-theme-cayman
+backend: 
+  name: github
+  repo: acgd-webdev-workshops/realcottages
+  
+media_folder: "images/uploads"
