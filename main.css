@@ -11,6 +11,7 @@ html {
     font-size: 10px;
     font-family: 'Roboto', sans-serif;
     color: #eee;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -94,6 +95,9 @@ img {
 /* End reusable */
 
 /* Start header */
+header {
+
+}
 
 .navbar-brand {
     font-size: 2.4rem;
@@ -113,7 +117,7 @@ img {
     line-height: 24px;
 }
 header {
-    background: rgba(43, 55, 96, 0.2);
+    background: rgba(43, 55, 96, 0.6);
     overflow: hidden;
     position: sticky;
     position: -webkit-sticky;
@@ -129,6 +133,7 @@ header {
     padding: 23px 40px;
     text-decoration: none;
 }
+
 
 /* Banner Area */
 
@@ -222,36 +227,6 @@ header {
     border-radius: 8px;
 }
 
-.profile-img .overlay {
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    right: 0;
-    background-color: #008CBA;
-    overflow: hidden;
-    width: 43%;
-    height: 0;
-    opacity: .7;
-    transition: .5s ease;
-    border-radius: 8px;
-}
-
-.profile-img:hover .overlay {
-    bottom: 0;
-    height: 100%;
-}
-
-.text {
-    white-space: nowrap;
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    overflow: hidden;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
 
 .about-details {
     flex: 1;
@@ -269,8 +244,16 @@ header {
 
 .social-media {
     margin-top: 2rem;
+    list-style-type: none;
 }
 
+.social-media li {
+    margin-top: 2rem;
+    list-style-type: none;
+    display: block;
+    float: left;
+    padding: 0 2rem;
+}
 .social-media i {
     font-size: 5rem;
     transition: color 650ms;
@@ -486,22 +469,14 @@ input[type="submit"]:hover {
         background-size: cover;
     }
 
-    .title-text h1 {
+    .landing-text h1 {
         font-size: 15rem;
     }
 
-    .title-text h4 {
+    .landing-text h6 {
         font-size: 1.7rem;
     }
-    
-    .nav {
-        z-index: 9999;
-    }
-    
-    .top-nav {
-        display: none;
-    }
-    
+
     .about-heading h1 {
         font-size: 8rem;
     }
@@ -536,21 +511,16 @@ input[type="submit"]:hover {
             right: 2rem;
         }
 
-        .title-text h1 {
-            font-size: 4rem;
+        .landing-text h1 {
+            font-size: 7rem;
         }
 
-        .title-text h4 {
+        .landing-text h6 {
             font-size: 1.3rem;
         }
-        .nav {
-             z-index: 9999;
-        }
+
         .nav-link {
             font-size: 1.5rem;
-        }
-        .top-nav {
-        display: none;
         }
 
         .about .container {
