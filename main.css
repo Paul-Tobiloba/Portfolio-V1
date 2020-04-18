@@ -469,18 +469,39 @@ input[type="submit"]:hover {
         background-size: cover;
     }
 
-    .landing-text h1 {
-        font-size: 15rem;
+    .top-nav {
+        display: none;
+    }
+    .title-text h3 {
+        font-size: 4rem;
     }
 
-    .landing-text h6 {
-        font-size: 1.7rem;
+    .title-text h1 {
+        font-size: 7rem;
+    }
+
+    .title-text h4 {
+        font-size: 2.5rem;
+    }
+
+    .social-media li {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        padding: 0 .8rem;
     }
 
     .about-heading h1 {
         font-size: 8rem;
     }
+    .banner-image {
+        padding-top: 2rem;
+    }
 
+    .site-banner {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
     .section-heading h1 {
         font-size: 3rem;
     }
@@ -490,7 +511,7 @@ input[type="submit"]:hover {
     }
 
     .about-details li {
-        margin: 0 2rem;
+        margin: 0 .7rem;
     }
 
     .icon-container {
@@ -511,12 +532,20 @@ input[type="submit"]:hover {
             right: 2rem;
         }
 
-        .landing-text h1 {
-            font-size: 7rem;
+        .top-nav {
+            display: none;
         }
 
-        .landing-text h6 {
-            font-size: 1.3rem;
+        .title-text h3 {
+            font-size: 3rem;
+        }
+
+        .title-text h1 {
+            font-size: 5rem;
+        }
+
+        .title-text h4 {
+            font-size: 1.5rem;
         }
 
         .nav-link {
@@ -533,8 +562,14 @@ input[type="submit"]:hover {
 
         .banner-image {
             margin: 0 0 7rem 0;
+            padding-top: 2rem;
         }
 
+        .site-banner {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+        
         .profile-img {
             margin: 0 0 7rem 0;
         }
