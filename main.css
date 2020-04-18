@@ -94,44 +94,41 @@ img {
 /* End reusable */
 
 /* Start header */
-header {
-    width: 90%;
-    min-height: 10vh;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px;
-}
 
 .navbar-brand {
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-family: 'Pacifico', cursive;
     color: cyan;
+    display: block;
+    float: left;
+    line-height: 24px;
+    padding: 23px 40px;
+    line-height: 24px;
 }
 
-.nav-list {
-    list-style: none;
-    background-color: #000000;
-    width: 100%;
-    margin: 0;
-    padding-right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-li {
-    margin: 0 2rem;
-}
-
-.nav-list {
-    font-family: 'Roboto', sans-serif;
+.top-nav {
+    float: right;
+    font-weight: 600;
     font-size: 1.8rem;
-    padding: 1rem;
-    -webkit-background-clip: text;
+    line-height: 24px;
+}
+header {
+    background: rgba(43, 55, 96, 0.2);
+    overflow: hidden;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 9999;
 }
 
+.top-nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 23px 40px;
+    text-decoration: none;
+}
 
 /* Banner Area */
 
@@ -489,14 +486,22 @@ input[type="submit"]:hover {
         background-size: cover;
     }
 
-    .landing-text h1 {
+    .title-text h1 {
         font-size: 15rem;
     }
 
-    .landing-text h6 {
+    .title-text h4 {
         font-size: 1.7rem;
     }
-
+    
+    .nav {
+        z-index: 9999;
+    }
+    
+    .top-nav {
+        display: none;
+    }
+    
     .about-heading h1 {
         font-size: 8rem;
     }
@@ -531,16 +536,21 @@ input[type="submit"]:hover {
             right: 2rem;
         }
 
-        .landing-text h1 {
-            font-size: 7rem;
+        .title-text h1 {
+            font-size: 4rem;
         }
 
-        .landing-text h6 {
+        .title-text h4 {
             font-size: 1.3rem;
         }
-
+        .nav {
+             z-index: 9999;
+        }
         .nav-link {
-            font-size: 3.5rem;
+            font-size: 1.5rem;
+        }
+        .top-nav {
+        display: none;
         }
 
         .about .container {
