@@ -37,8 +37,8 @@ p {
 }
 
 img {
-    width: 90%;
-    max-width: 90%;
+    width: 100%;
+    max-width: 100%;
 }
 
 /* End global */
@@ -301,9 +301,10 @@ header {
 
 .hobbies-description {
     flex: 1;
+    padding-left: 2rem;
 }
 
-.hobbies-description h1 {
+.hobbies-description h3 {
     font-size: 3rem;
     font-weight: 300;
     margin: 1rem 0;
@@ -529,7 +530,7 @@ header {
         }
 
         .banner-image {
-            margin: 0 0 7rem 0;
+            margin: auto;
             padding-top: 2rem;
         }
 
@@ -539,7 +540,7 @@ header {
         }
         
         .profile-img {
-            margin: 0 0 7rem 0;
+            margin: auto;
         }
 
         .hobbies-item {
@@ -547,12 +548,12 @@ header {
         }
 
         .hobbies-img {
-            margin: 0 0 2rem 0;
+            margin: 0.5rem;
             order: 1;
         }
 
         .hobbies-description {
-            margin: 0;
+            margin: 0.5rem;
             order: 2;
         }
 
