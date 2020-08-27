@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 /*Start global*/
 * {
     margin: 0;
@@ -9,6 +11,7 @@ html {
     font-size: 10px;
     font-family: 'Roboto', sans-serif;
     color: #eee;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -50,7 +53,7 @@ img {
 
 .section-heading {
     text-align: center;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
     /*was margin top before, image wasnt so big*/
 }
 
@@ -93,39 +96,39 @@ img {
 
 /* Start header */
 header {
-    width: 90%;
-    min-height: 10vh;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px;
+    background: rgba(43, 55, 96, 0.6);
+    overflow: hidden;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 9999;
 }
 
 .navbar-brand {
-    font-size: 2rem;
+    font-size: 2.4rem;
+    font-family: 'Pacifico', cursive;
+    color: cyan;
+    display: block;
+    float: left;
+    line-height: 24px;
+    padding: 23px 40px;
+    line-height: 24px;
 }
 
-.nav-list {
-    list-style: none;
-    background-color: #000000;
-    width: 100%;
-    margin: 0;
-    padding-right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-li {
-    margin: 0 2rem;
-}
-
-.nav-list {
-    font-family: 'Roboto', sans-serif;
+.top-nav {
+    float: right;
+    font-weight: 600;
     font-size: 1.8rem;
-    padding: 1rem;
-    -webkit-background-clip: text;
+    line-height: 24px;
+}
+
+.top-nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 23px 40px;
+    text-decoration: none;
 }
 
 
@@ -138,7 +141,7 @@ li {
 }
 
 .site-banner .container .site-title h3 {
-    padding-top: 35%;
+    padding-top: 10%;
     font-weight: 900;
     font-size: 3.5rem;
 }
@@ -188,7 +191,6 @@ li {
 
 .about-heading {
     margin-top: 10rem;
-    /* extra */
     text-align: center;
     text-transform: uppercase;
     line-height: 0;
@@ -221,36 +223,6 @@ li {
     border-radius: 8px;
 }
 
-.profile-img .overlay {
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    right: 0;
-    background-color: #008CBA;
-    overflow: hidden;
-    width: 43%;
-    height: 0;
-    opacity: .7;
-    transition: .5s ease;
-    border-radius: 8px;
-}
-
-.profile-img:hover .overlay {
-    bottom: 0;
-    height: 100%;
-}
-
-.text {
-    white-space: nowrap;
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    overflow: hidden;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
 
 .about-details {
     flex: 1;
@@ -264,33 +236,6 @@ li {
 .bio li {
     padding: .5rem;
     list-style: none;
-}
-
-.social-media {
-    margin-top: 2rem;
-}
-
-.social-media i {
-    font-size: 5rem;
-    transition: color 650ms;
-}
-
-.fa-facebook-square:hover {
-    color: #4267b2;
-}
-
-.fa-github-square:hover {
-    color: #F1502F;
-}
-
-.fa-instagram:hover {
-    background: linear-gradient(#fd57bf, #ffe838);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.fa-linkedin:hover {
-    color: #0077B5;
 }
 
 /*End about*/
@@ -338,40 +283,40 @@ li {
 
 /* End skills */
 
-/* Start portfolio */
-.portfolio-item {
+/* Start hobbies */
+.hobbies-item {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 5rem;
 }
 
-.portfolio-item:last-child {
+.hobbies-item:last-child {
     margin-bottom: 0;
 }
 
-.portfolio-img {
+.hobbies-img {
     flex: 1;
 }
 
-.portfolio-description {
+.hobbies-description {
     flex: 1;
 }
 
-.portfolio-description h1 {
+.hobbies-description h1 {
     font-size: 3rem;
     font-weight: 300;
     margin: 1rem 0;
 }
 
-.portfolio-description h6 {
+.hobbies-description h6 {
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 300;
     opacity: 0.3;
 }
 
-.portfolio-description .cta {
+.hobbies-description .cta {
     display: inline-block;
     margin-top: 2.5rem;
     font-size: 1.5rem;
@@ -380,47 +325,54 @@ li {
     transition: color 650ms;
 }
 
-.portfolio-description .cta:hover {
+.hobbies-description .cta:hover {
     color: #2f67cd;
 }
+/* Hobbies end */
 
 /*Start contact*/
 .contact {
-    background-color: ;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
 }
-
-form {
-    width: 70%;
+.social-media {
+    list-style-type: none;
     margin: 0 auto;
+    width: 70%;
 }
 
-form label {
-    font-size: 1.5rem;
+.social-media li {
+    margin-top: 2rem;
+    list-style-type: none;
+    display: inline-flex;
+    padding: 0 2rem;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
 }
 
-input,
-select,
-textarea {
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 5px;
-    border: none;
-    outline-color: cyan;
+.social-media i {
+    font-size: 5rem;
+    transition: color 650ms;
 }
 
-input[type="submit"] {
-    width: initial;
-    background-color: cyan;
-    color: #eee;
-    padding: 1rem 2rem;
-    border-radius: .8rem;
-    cursor: pointer;
-    transition: background-color 650ms;
+.fa-twitter:hover {
+    color: #00ACEE;
 }
 
-input[type="submit"]:hover {
-    color: grey;
-    background-color: cyan;
+.fa-github-square:hover {
+    color: #4078c0;
+}
+
+.fa-envelope-square:hover {
+    background: linear-gradient(#d44638, #eeeeee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-linkedin:hover {
+    color: #0077B5;
 }
 
 /*End contact*/
@@ -485,18 +437,39 @@ input[type="submit"]:hover {
         background-size: cover;
     }
 
-    .landing-text h1 {
-        font-size: 15rem;
+    .top-nav {
+        display: none;
+    }
+    .title-text h3 {
+        font-size: 4rem;
     }
 
-    .landing-text h6 {
-        font-size: 1.7rem;
+    .title-text h1 {
+        font-size: 7rem;
+    }
+
+    .title-text h4 {
+        font-size: 2.5rem;
+    }
+
+    .social-media li {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        padding: 0 .8rem;
     }
 
     .about-heading h1 {
         font-size: 8rem;
     }
+    .banner-image {
+        padding-top: 2rem;
+    }
 
+    .site-banner {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
     .section-heading h1 {
         font-size: 3rem;
     }
@@ -506,7 +479,7 @@ input[type="submit"]:hover {
     }
 
     .about-details li {
-        margin: 0 2rem;
+        margin: 0 .7rem;
     }
 
     .icon-container {
@@ -527,16 +500,24 @@ input[type="submit"]:hover {
             right: 2rem;
         }
 
-        .landing-text h1 {
-            font-size: 7rem;
+        .top-nav {
+            display: none;
         }
 
-        .landing-text h6 {
-            font-size: 1.3rem;
+        .title-text h3 {
+            font-size: 3rem;
+        }
+
+        .title-text h1 {
+            font-size: 5rem;
+        }
+
+        .title-text h4 {
+            font-size: 1.5rem;
         }
 
         .nav-link {
-            font-size: 3.5rem;
+            font-size: 1.5rem;
         }
 
         .about .container {
@@ -549,36 +530,30 @@ input[type="submit"]:hover {
 
         .banner-image {
             margin: 0 0 7rem 0;
+            padding-top: 2rem;
         }
 
+        .site-banner {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+        
         .profile-img {
             margin: 0 0 7rem 0;
         }
 
-        .portfolio-item {
+        .hobbies-item {
             flex-direction: column;
         }
 
-        .portfolio-img {
+        .hobbies-img {
             margin: 0 0 2rem 0;
             order: 1;
         }
 
-        .portfolio-description {
+        .hobbies-description {
             margin: 0;
             order: 2;
-        }
-
-        .timeline p {
-            font-size: 1.6rem;
-        }
-
-        .timeline .date::before {
-            font-size: 1.4rem;
-        }
-
-        form {
-            width: 100%;
         }
 
         .up {
