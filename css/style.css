@@ -7,15 +7,19 @@
 /* Custom Properties, update these for your own design */
 
 :root {
-    --ff-primary: 'Lora', serif;
-    --ff-secondary: 'Roboto Slab', serif;
+    --ff-primary: 'Advent Pro', sans-serif;
+    --ff-secondary: 'Baumans', cursive;
     
     --fw-reg: 400;
     --fw-bold: 700;
     
     --clr-light: #fff;
-    --clr-dark: #303030;
-    --clr-accent: #f8333c;
+    --clr-dark: #202945;
+    --clr-accent: #F2C541;
+    --clr-primary: #1552EF;
+
+    --foreground: var(--clr-dark);
+    --background: var(--clr-light);
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -24,6 +28,15 @@
     
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
           0.125em 0.125em 0.25em rgba(0,0,0,.15);
+}
+.darkmode {
+    --clr-light: #fff;
+    --clr-dark: #202945;
+    --clr-accent: #F2C541;
+    --clr-primary: #1552EF;
+
+    --foreground: var(--clr-light);
+    --background: var(--clr-dark);
 }
 
 @media (min-width: 800px) {
@@ -44,8 +57,8 @@
 
 
 body {
-    background: var(--clr-light);
-    color: var(--clr-dark);
+    background: var(--background);
+    color: var(--foreground);
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
@@ -142,7 +155,7 @@ header {
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 160px;
 }
 
 .nav {
@@ -475,4 +488,29 @@ header {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Dark mode btn */
+
+.dark-mode-toggle {
+  position: absolute;
+  z-index: 100;
+  top: 1em;
+  right: 5em;
+  color: var(--foreground);
+  border: 2px solid currentColor;
+  padding: 4px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+.click-here {
+  // SVG icon from Font Awesome
+  width: 100px;
+  right: 5.5em;
+  position: absolute;
+  top: 3em;
 }
