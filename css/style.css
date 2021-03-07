@@ -27,7 +27,7 @@
     --fs-body: 1rem;
     
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
-          0.125em 0.125em 0.25em rgba(0,0,0,.15);
+            0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 .darkmode {
     --clr-light: #fff;
@@ -268,6 +268,10 @@ header {
     box-shadow: var(--bs);
 }
 
+.section__title--intro > strong {
+    color: var(--clr-primary);
+}
+
 .section__subtitle--intro {
     display: inline-block;
 }
@@ -493,24 +497,29 @@ header {
 /* Dark mode btn */
 
 .dark-mode-toggle {
-  position: absolute;
-  z-index: 100;
-  top: 1em;
-  right: 5em;
-  color: var(--foreground);
-  border: 2px solid currentColor;
-  padding: 4px;
-  background: transparent;
-  cursor: pointer;
-  border-radius: 5px;
-  width: 30px;
-  height: 30px;
+    position: absolute;
+    z-index: 100;
+    top: 1em;
+    right: 5em;
+    color: var(--foreground);
+    border: 2px solid currentColor;
+    padding: 4px;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
 }
 
 .click-here {
-  // SVG icon from Font Awesome
-  width: 100px;
-  right: 5.5em;
-  position: absolute;
-  top: 3em;
+  /*  SVG icon from Font Awesome */
+    width: 100px;
+    right: 5.5em;
+    position: absolute;
+    top: 3em;
+}
+
+.my-emoji {
+    width: 1.2em;
+    display: inline-block;
 }
