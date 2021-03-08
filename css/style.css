@@ -8,6 +8,7 @@
 
 :root {
     --ff-primary: 'Advent Pro', sans-serif;
+    --ff-tertiary: 'Unica One', cursive;
     --ff-secondary: 'Baumans', cursive;
     
     --fw-reg: 400;
@@ -102,6 +103,11 @@ strong { font-weight: var(--fw-bold) }
 }
 
 /* Typography */
+
+h1,
+h2 {
+    font-family: var(--ff-tertiary);
+}
 
 h1,
 h2,
@@ -329,7 +335,7 @@ header {
     display: block;
     width: 2em;
     height: 1px;
-    margin: 0.5em auto 1em;
+    margin: 0.5em auto;
     background: var(--clr-light);
     opacity: 0.25;
 }
@@ -343,6 +349,24 @@ header {
     margin: 0 auto;
 }
 
+.icon-container {
+    width: 5rem;
+    height: 5rem;
+    border: 3px solid var(--clr-accent);
+    background-color: var(--clr-dark);
+    margin: 3em auto;
+    display: flex;
+    place-items: center;
+    transform: rotate(45deg);
+}
+
+.icon-container i {
+    color: var(--clr-accent);
+    font-size: 3em;
+    margin: auto;
+    transform: rotate(-45deg);
+}
+
 @media (min-width: 800px) {
     .services {
         display: flex;
@@ -353,6 +377,10 @@ header {
     
     .service + .service {
         margin-left: 2em;
+    }
+    .icon-container {
+        width: 7rem;
+        height: 7rem;
     }
 }
 
