@@ -436,12 +436,14 @@ header {
 
 .portfolio {
     display: grid;
+    gap: 1.5em;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .portfolio__item {
     background: var(--clr-accent);
     overflow: hidden;
+    height: fit-content;
 }
 
 .portfolio__img {
@@ -460,7 +462,11 @@ header {
     transform: scale(1.2);
     opacity: .5;
 }
-
+/* @media (min-width: 600px) {
+    .portfolio__item {
+        
+    }
+} */
 
 /* footer */
 
